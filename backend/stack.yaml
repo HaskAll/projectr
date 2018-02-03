@@ -1,0 +1,10 @@
+resolver: ghc-8.0.2
+
+packages:
+  - .
+
+nix:
+  enable: true
+  path: ["nixpkgs=https://nixos.org/channels/nixos-17.09/nixexprs.tar.xz"]
+  shell-file: shell.nix
+  nix-shell-options: ["--arg", "dev", "true"]
